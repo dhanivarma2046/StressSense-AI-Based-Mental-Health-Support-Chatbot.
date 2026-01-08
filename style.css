@@ -1,0 +1,177 @@
+/* =======================
+   GLOBAL PAGE STYLING
+======================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(rgba(238,243,255,0.93), rgba(238,243,255,0.93)),
+    url("./visionframe-bg.png") no-repeat center;
+
+  background-size: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+  background: #4c6ef5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =======================
+   MAIN CONTAINER
+======================= */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  width: 90%;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+/* =======================
+   CHAT & DASHBOARD
+======================= */
+.chat-section,
+.dashboard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.chat-section {
+  width: 60%;
+}
+
+.dashboard {
+  width: 40%;
+}
+
+/* =======================
+   CHAT BOX
+======================= */
+#chatBox {
+  height: 350px;
+  background: #f4f6ff;
+  border-radius: 10px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* =======================
+   CHAT MESSAGES
+======================= */
+.message {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 75%;
+  animation: fadeIn 0.4s ease-in;
+}
+
+.user {
+  background: #d7e3ff;
+  text-align: right;
+  margin-left: auto;
+}
+
+.bot {
+  background: #e9fbe9;
+  font-style: italic;
+  margin-right: auto;
+}
+
+/* =======================
+   INPUT AREA
+======================= */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* =======================
+   BUTTON
+======================= */
+button {
+  background: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3b5bdb;
+  transform: scale(1.05);
+}
+
+/* =======================
+   DASHBOARD CARDS
+======================= */
+.card {
+  background: #f7f9ff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.score {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#statusIcon {
+  width: 80px;
+  margin-top: 10px;
+}
+
+/* =======================
+   DISCLAIMER
+======================= */
+.disclaimer {
+  font-size: 12px;
+  color: gray;
+  margin-top: 10px;
+}
+
+/* =======================
+   ANIMATION
+======================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

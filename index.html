@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StressSense – Mental Health Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="app-header">
+  <div style="display:flex; align-items:center;">
+  <img src="./visionframe-bg.png" width="100" height="100">
+  <div style="margin-left:10px; text-align:center;">
+    <h1>StressSense</h1>
+    <p>AI-powered Mental Well-being Assistant</p>
+  </div>
+</div>
+</header>
+
+<div class="container">
+
+  <!-- Chat Section -->
+  <div class="chat-section">
+    <h2>Talk to StressSense</h2>
+    <div id="chatBox"></div>
+
+    <div class="input-area">
+      <input id="userInput" type="text" placeholder="Type how you're feeling..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <p class="disclaimer">
+      ⚠ This chatbot does not replace professional mental health care.
+    </p>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <h2>Stress Dashboard</h2>
+
+    <div class="card">
+      <h3>Stress Level</h3>
+      <div id="stressScore" class="score">0</div>
+      <img id="statusIcon" src="calm.png" alt="status" />
+      <p id="stressLabel">Calm</p>
+    </div>
+
+    <div class="card">
+      <h3>Recommended Support</h3>
+      <ul id="resources"></ul>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
